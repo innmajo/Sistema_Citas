@@ -23,6 +23,12 @@
                             <p class="text-green-700">Ver la lista pública de servicios y precios disponibles</p>
                         </a>
 
+                        <a href="{{ route('citas.index') }}"
+                            class="block p-6 bg-purple-50 border border-purple-200 rounded-lg hover:bg-purple-100 transition">
+                            <h5 class="font-bold text-purple-900">Agendamiento de Citas</h5>
+                            <p class="text-purple-700">Reserva tu cita, selecciona servicios y gestiona tus horarios</p>
+                        </a>
+
                         @if(auth()->user()->isAdmin())
                             <a href="{{ route('admin.index') }}"
                                 class="block p-6 bg-red-50 border border-red-200 rounded-lg hover:bg-red-100">

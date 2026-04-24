@@ -31,6 +31,10 @@ Route::middleware(['auth', 'verified'])->group(function () {
     // Visualización de Servicios (Pública para autenticados)
     Route::get('/servicios', [ServicioController::class, 'index'])->name('servicios.index');
 
+    // Módulo de Citas (CRUD Completo)
+    Route::resource('citas', \App\Http\Controllers\CitaController::class);
+    Route::patch('/citas/{cita}/estado', [\App\Http\Controllers\CitaController::class, 'cambiarEstado'])->name('citas.cambiarEstado');
+
     /**
      * SOLO ADMINISTRADORES
      */
