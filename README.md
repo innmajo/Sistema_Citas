@@ -62,5 +62,5 @@ Por otra parte, los administradores cuentan con herramientas especializadas para
 
 | Rol | Correo | Contraseña |
 | :--- | :--- | :--- |
-| **Administrador** | `[EMAIL_ADDRESS]` | `12345678` |
-| **Usuario Estándar** | `[EMAIL_ADDRESS]` | `12345678` |
+| **Administrador** | `admin@gmail.com` | `admin123` |
+| **Usuario Estándar** | `cliente@gmail.com` | `cliente123` |
